@@ -1,16 +1,9 @@
-/**
- * Created by lian.jing on 2016/8/15.
- */
-
-"use strict";
-
-const path = require("path");
+const path = require('path');
 
 module.exports = {
-    entry: __dirname + "/app/main.js",
+    entry: './src/index.js',
     output: {
-        path: path.join(__dirname, "public"),
-        filename: "bundle.js"
-    },
-    mode: "production"
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    }
 };
